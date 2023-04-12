@@ -11,6 +11,10 @@ import { WorksComponent } from './works/works.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MaterialModule } from './material';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +30,9 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    MaterialModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

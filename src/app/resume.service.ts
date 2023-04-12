@@ -10,8 +10,8 @@ export class ResumeService {
   currentLang = this.localeId || 'en'; // or 'ar'
 
   getResume() {
-    const domain = "rita"
+    const domain = "ritta"
     //return this.httpClient.get('./assets/Names_Of_names_EN.json');
     //window.location.pathname.split("/")[1]
-    return this.httpClient.get('https://raw.githubusercontent.com/davidpales1/Neetechs_Resume/main/json/'+domain+'/'+domain+'.'+this.currentLang+'.json');
+    return this.httpClient.get('https://raw.githubusercontent.com/davidpales1/Neetechs_Resume/main/json/'+domain+'/'+domain+'.'+'en'+'.json');
   }}
