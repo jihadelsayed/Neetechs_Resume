@@ -18,7 +18,7 @@ jobs:
     - run: npm install
     #- run: npm run build:prod
     - run: npm run build:prod
-    - uses: davidpales1/firebase-action@master
+    - uses: w9jds/firebase-action@master
       with:
         args: deploy --only hosting
       env:
