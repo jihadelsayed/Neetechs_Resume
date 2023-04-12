@@ -112,7 +112,7 @@
 
        <div class="nine columns main-col">
 
-          <div class="row item" *ngFor="let study of resume.education">
+          <div class="row item" *ngFor="let study of resume.resume.education">
 
              <div class="twelve columns">
                 <h3>{{study.location}}</h3>
@@ -137,7 +137,7 @@
 
        <div class="nine columns main-col">
 
-          <div class="row item" *ngFor="let work of resume.works">
+          <div class="row item" *ngFor="let work of resume.resume.works">
 
              <div class="twelve columns">
 
@@ -165,13 +165,13 @@
 
        <div class="nine columns main-col">
 
-          <p>{{resume.skillsDescription}}
+          <p>{{resume.resume.skillsDescription}}
           </p>
 
       <div class="bars">
 
          <ul class="skills">
-           <li *ngFor="let skill of resume.skills"
+           <li *ngFor="let skill of resume.resume.skills"
            ><span [ngClass]="'bar-expand animatedIt'" [style.width.%]="skill.percentage"></span><em>{{skill.skill}}</em></li>
           </ul>
 
