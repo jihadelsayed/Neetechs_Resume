@@ -22,18 +22,22 @@
     <div class="row banner">
        <div class="banner-text">
           <h1 class="responsive-headline">{{ resume.home.name }}</h1>
-          <h3>I'm a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
+          <h3>
+            {{ resume.home.description }}
+            <!-- I'm a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
           effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
-          and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+          and learn more <a class="smoothscroll" href="#about">about me</a>. -->
+
+         </h3>
           <hr />
           <ul class="social">
-             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-             <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-             <li><a href="#"><i class="fa fa-skype"></i></a></li>
+             <li><a [href]="resume.home.facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a [href]="resume.home.twitter"><i class="fa fa-twitter"></i></a></li>
+             <li><a [href]="resume.home.googlePlus"><i class="fa fa-google-plus"></i></a></li>
+             <li><a [href]="resume.home.linkedin"><i class="fa fa-linkedin"></i></a></li>
+             <li><a [href]="resume.home.instagram"><i class="fa fa-instagram"></i></a></li>
+             <li><a [href]="resume.home.website"><i class="fa fa-dribbble"></i></a></li>
+             <li><a [href]="resume.home.skype"><i class="fa fa-skype"></i></a></li>
           </ul>
        </div>
     </div>
@@ -53,21 +57,15 @@
 
        <div class="three columns">
 
-          <img class="profile-pic"  src="/assets/images/profilepic.jpg" alt="" />
+          <img class="profile-pic" [src]="resume.about.image" alt="" />
 
        </div>
 
        <div class="nine columns main-col">
 
-          <h2>About Me</h2>
+          <h2>{{ resume.about.name }}</h2>
 
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-          eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-          voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-          voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-          </p>
+          <p>{{ resume.about.description }}</p>
 
           <div class="row">
 
@@ -75,19 +73,19 @@
 
                 <h2>Contact Details</h2>
                 <p class="address">
-             <span>Jonathan Doe</span><br>
-             <span>1600 Amphitheatre Parkway<br>
-                   Mountain View, CA 94043 US
+             <span>{{ resume.about.name }}</span><br>
+             <span>{{ resume.about.country }}<br>
+              <!-- {{ resume.about.name }} -->
                    </span><br>
-             <span>(123)456-7890</span><br>
-                   <span>anyone@website.com</span>
+             <span>{{ resume.about.number }}</span><br>
+                   <span>{{ resume.about.email }}</span>
            </p>
 
              </div>
 
              <div class="columns download">
                 <p>
-                   <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                   <a [href]="resume.about.resumeDownloadLink" class="button"><i class="fa fa-download"></i>Download Resume</a>
                 </p>
              </div>
 
@@ -114,42 +112,16 @@
 
        <div class="nine columns main-col">
 
-          <div class="row item">
+          <div class="row item" *ngFor="let study of resume.education">
 
              <div class="twelve columns">
-
-                <h3>University of Life</h3>
-                <p class="info">Master in Graphic Design <span>&bull;</span> <em class="date">April 2007</em></p>
-
+                <h3>{{study.location}}</h3>
+                <p class="info">{{study.degree}}<span>&bull;</span> <em class="date">{{study.date}}</em></p>
                 <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                </p>
-
+                  {{study.description}}</p>
              </div>
 
           </div> <!-- item end -->
-
-          <div class="row item">
-
-             <div class="twelve columns">
-
-                <h3>School of Cool Designers</h3>
-                <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
-
-                <p>
-                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                </p>
-
-             </div>
-
-          </div> <!-- item end -->
-
        </div> <!-- main-col end -->
 
     </div> <!-- End Education -->
@@ -165,42 +137,19 @@
 
        <div class="nine columns main-col">
 
-          <div class="row item">
+          <div class="row item" *ngFor="let work of resume.works">
 
              <div class="twelve columns">
 
-                <h3>Awesome Design Studio</h3>
-                <p class="info">Senior UX Designer <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
+                <h3>{{work.location}}</h3>
+                <p class="info">{{work.position}}<span>&bull;</span> <em class="date">{{work.date}}</em></p>
 
                 <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                </p>
+                  {{work.description}}</p>
 
              </div>
 
           </div> <!-- item end -->
-
-          <div class="row item">
-
-             <div class="twelve columns">
-
-                <h3>Super Cool Studio</h3>
-                <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-                <p>
-                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                </p>
-
-             </div>
-
-          </div> <!-- item end -->
-
        </div> <!-- main-col end -->
 
     </div> <!-- End Work -->
@@ -225,13 +174,10 @@
       <div class="bars">
 
          <ul class="skills">
-           <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-                <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-          <li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-          <li><span class="bar-expand css"></span><em>CSS</em></li>
-          <li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-        </ul>
+           <li *ngFor="let skill of resume.skills"
+
+           ><span class="bar-expand photoshop"></span><em>{{skill.skill}}</em></li>
+          </ul>
 
       </div><!-- end skill-bars -->
 
@@ -751,18 +697,18 @@
        <div class="twelve columns">
 
           <ul class="social-links">
-             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-             <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-             <li><a href="#"><i class="fa fa-skype"></i></a></li>
+             <li><a [href]="resume.home.facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a [href]="resume.home.twitter"><i class="fa fa-twitter"></i></a></li>
+             <li><a [href]="resume.home.googlePlus"><i class="fa fa-google-plus"></i></a></li>
+             <li><a [href]="resume.home.linkedin"><i class="fa fa-linkedin"></i></a></li>
+             <li><a [href]="resume.home.instagram"><i class="fa fa-instagram"></i></a></li>
+             <li><a [href]="resume.home.website"><i class="fa fa-dribbble"></i></a></li>
+             <li><a [href]="resume.home.skype"><i class="fa fa-skype"></i></a></li>
           </ul>
 
           <ul class="copyright">
-             <li>&copy; Copyright 2014 CeeVee</li>
-             <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>
+             <li>&copy; {{resume.footer.copyright}}</li>
+             <!-- <li>Created by <a href="https://www.neetechs.com/" title="Styleshout" target="_blank">Sayed</a></li> -->
           </ul>
 
        </div>

@@ -14,6 +14,7 @@
   },
   "about": {
     "name": "Jonathan Doe",
+    "image": "/assets/images/profilepic.jpg",
     "street": "1600 Amphitheatre Parkway",
     "country": " Mountain View, CA 94043 US ",
     "number": "(123)456-7890",
@@ -52,27 +53,27 @@
     ],
     "skills": [
       {
-        "examples": "photoshop",
+        "skill": "photoshop",
         "percentage": 50
       },
       {
-        "examples": "Illustrator",
+        "skill": "Illustrator",
         "percentage": 50
       },
       {
-        "examples": "Wordpress",
+        "skill": "Wordpress",
         "percentage": 50
       },
       {
-        "examples": "CSS",
+        "skill": "CSS",
         "percentage": 50
       },
       {
-        "examples": "HTML5",
+        "skill": "HTML5",
         "percentage": 50
       },
       {
-        "examples": "jQuery",
+        "skill": "jQuery",
         "percentage": 50
       }
     ]
@@ -91,7 +92,10 @@
   },
   "contact": {
     "name": "Introduction",
-    "examples": "quran",
+    "skill": "quran",
     "description": "I'm a Manila based graphic designer, illustrator and webdesigner creating awesome and effective visual identities for companies of all sizes around the globe. Let's start scrolling and learn more about me."
-  }
+  },
+  "footer": {
+    "copyright": "Copyright 2022 Ritta"
+ }
 }
