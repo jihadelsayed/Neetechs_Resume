@@ -28,7 +28,7 @@ export class GoogleScholarComponent {
     this.googleScholarService.getArticles().subscribe(
       (data: any) => {
         console.log(data)
-        this.articles = data
+        this.articles = data.articles
       })
   }
 }
