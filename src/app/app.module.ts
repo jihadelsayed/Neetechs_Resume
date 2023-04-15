@@ -8,12 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 import { WorksComponent } from './works/works.component';
-import { SkillsComponent } from './skills/skills.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material';
+import { FooterComponent } from './footer/footer.component';
+import { GoogleScholarComponent } from './google-scholar/google-scholar.component';
 
 
 @NgModule({
@@ -24,9 +25,10 @@ import { MaterialModule } from './material';
     AboutComponent,
     ResumeComponent,
     WorksComponent,
-    SkillsComponent,
     TestimonialsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    GoogleScholarComponent
   ],
   imports: [
     BrowserModule,

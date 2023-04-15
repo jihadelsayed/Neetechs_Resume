@@ -1,1 +1,47 @@
-<p>about works!</p>
+ <!-- About Section
+ ================================================== -->
+ <section id="about">
+
+  <div class="row">
+
+     <div class="three columns">
+
+        <img class="profile-pic" [src]="resume.about.image" alt="" />
+
+     </div>
+
+     <div class="nine columns main-col">
+
+        <h2>{{ resume.about.name }}</h2>
+
+        <p>{{ resume.about.description }}</p>
+
+        <div class="row">
+
+           <div class="columns contact-details">
+
+              <h2>Contact Details</h2>
+              <p class="address">
+           <span>{{ resume.about.name }}</span><br>
+           <span>{{ resume.about.country }}<br>
+            <!-- {{ resume.about.name }} -->
+                 </span><br>
+           <span>{{ resume.about.number }}</span><br>
+                 <span>{{ resume.about.email }}</span>
+         </p>
+
+           </div>
+
+           <div class="columns download">
+              <p>
+                 <a [href]="resume.about.resumeDownloadLink" class="button"><i class="fa fa-download"></i>Download Resume</a>
+              </p>
+           </div>
+
+        </div> <!-- end row -->
+
+     </div> <!-- end .main-col -->
+
+  </div>
+
+</section> <!-- About Section End-->
