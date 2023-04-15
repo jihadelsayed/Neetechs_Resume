@@ -15,6 +15,7 @@ export class AppComponent {
   currentLang = this.localeId || 'en'; // or 'ar'
   resume: any;
 
+
   constructor(@Inject(LOCALE_ID) public localeId: string,
   public resumeService: ResumeService,
   private router: Router)
