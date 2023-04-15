@@ -4,8 +4,7 @@
   "home": {
     "name": "I'm Retta El Sayed.",
     "facebook": "quran",
-    "twitter": "quran",
-    "googlePlus": "quran",
+    "twitter": "https://twitter.com/rita_saym",
     "linkedin": "https://www.linkedin.com/in/retta-e-01395912a/",
     "instagram": "quran",
     "website": "https://neetechs-resume.web.app/#resume",
@@ -17,7 +16,7 @@
     "image": "/assets/images/profilepic.jpg",
     "street": "1364 E Clifton Rd NE",
     "country": " Atlanta, GA, USA 30322",
-    "number": "(123)456-7890",
+    "number": "(205)240-9144",
     "email": "rettasayed@yahoo.com",
     "resumeDownloadLink": "quran",
     "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. "
@@ -51,10 +50,17 @@
         "description": " Quantify carotid artery hemodynamics using 4D flow MRI in patients with Carotid web (CaW)"
       },
       {
-        "location": "Super Cool Studio",
-        "position": "UX Designer",
-        "date": "March 2007 - February 2010",
-        "description": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium. "
+        "location": "Siemens Medical Solutions USA, Inc. - Cardiovascular Physiology and Flow Team",
+        "position": "Research Intern | Mentor: Tiziano Passerini.",
+        "date": "05/2022 – 06/2023",
+        "description": ""
+      }
+      ,
+      {
+        "location": "Wallace Tumor Institute – UAB University Hospital",
+        "position": "Undergraduate Research Assistant | Mentor: Suzanne E. Lapi, PhD",
+        "date": "03/2016 – 05/2019",
+        "description": ""
       }
     ],
     "skillsDescription": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium. ",
