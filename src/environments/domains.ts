@@ -25,7 +25,7 @@ export const domains: Domain[] = [
     hostname: "retta.neetechs.com"
   },
   {
-    name: "retta",
+    name: "retta-elsayed",
     hostname: "retta-elsayed.neetechs.com"
   },
   {
