@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { GoogleScholarService } from './google-scholar.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-google-scholar',
@@ -7,15 +9,39 @@ import { GoogleScholarService } from './google-scholar.service';
   styleUrls: ['./google-scholar.component.scss']
 })
 export class GoogleScholarComponent {
+
   @Input() resume: any;
+  SafeArticlesFrame: SafeResourceUrl;
+  articles: any
 
-  // articles: any[] = [];
+  constructor(private sanitizer: DomSanitizer, private httpClient: HttpClient) {
+    this.SafeArticlesFrame= this.sanitizer.bypassSecurityTrustResourceUrl(
+      'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=' + encodeURIComponent('retta el sayed') + '&btnG=');
+      this.searchScholar('retta el sayed')
+    // Add the iframe src URL to the src whitelist
+    // this.sanitizer.bypassSecurityTrustResourceUrl('https://scholar.google.com/citations?user=yccp85oAAAAJ&hl=en');
 
-  // constructor(private googleScholarService: GoogleScholarService) {}
+    // Example: encode search query string
+  }
 
-  // search(): void {
-  //   this.googleScholarService.getGoogleScholarPosts(this.resume.about.name).subscribe(data => {
-  //     this.articles = data.items;
-  //   });
-  // }
+  searchScholar(name: string) {
+    const encodedName = encodeURIComponent(name);
+    const url = `https://scholar.google.com/scholar?q=${encodedName}&output=cite&scirp=0&hl=en`;
+
+    return this.httpClient.get(url, { responseType: 'text' }).pipe(
+      map((response: string) => {
+        const parser = new DOMParser();
+        const htmlDoc = parser.parseFromString(response, 'text/html');
+        const links = Array.from(htmlDoc.querySelectorAll('a'));
+        const articles = links.filter(link => link.getAttribute('href')?.startsWith('/scholar?')).map(link => ({
+          title: link.querySelector('h3')?.textContent,
+          link: `https://scholar.google.com${link.getAttribute('href')}`,
+          authors: link.querySelector('.gs_a')?.textContent,
+          source: link.querySelector('.gs_citi')?.textContent
+        }));
+        console.log(articles)
+        return articles;
+      })
+    );
+  }
 }
