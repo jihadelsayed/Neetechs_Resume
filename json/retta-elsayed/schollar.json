@@ -1,0 +1,275 @@
+{
+  "search_metadata": {
+    "id": "643b296e4055aa518545e4ef",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/16436128c63b4c33/643b296e4055aa518545e4ef.json",
+    "created_at": "2023-04-15 22:47:10 UTC",
+    "processed_at": "2023-04-15 22:47:10 UTC",
+    "google_scholar_author_url": "https://scholar.google.com/citations?user=yccp85oAAAAJ&hl=en",
+    "raw_html_file": "https://serpapi.com/searches/16436128c63b4c33/643b296e4055aa518545e4ef.html",
+    "total_time_taken": 2.24
+  },
+  "search_parameters": {
+    "engine": "google_scholar_author",
+    "author_id": "yccp85oAAAAJ",
+    "hl": "en"
+  },
+  "author": {
+    "name": "Retta El Sayed",
+    "affiliations": "Graduate Research Assistance, Emory University & Georgia Institute of Technology",
+    "email": "Verified email at emory.edu",
+    "interests": [
+      {
+        "title": "Biomedical Engineering",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:biomedical_engineering",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Abiomedical_engineering"
+      },
+      {
+        "title": "MRI",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:mri",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Amri"
+      },
+      {
+        "title": "CFD",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:cfd",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Acfd"
+      },
+      {
+        "title": "Cyclotron Solid Target",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:cyclotron_solid_target",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Acyclotron_solid_target"
+      },
+      {
+        "title": "Radionuclides",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:radionuclides",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Aradionuclides"
+      }
+    ],
+    "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_128.png"
+  },
+  "articles": [
+    {
+      "title": "Production of Zr-89 using sputtered yttrium coin targets",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:u5HHmVD_uO8C",
+      "citation_id": "yccp85oAAAAJ:u5HHmVD_uO8C",
+      "authors": "SL Queern, TA Aweda, AVF Massicano, NA Clanton, R El Sayed, ...",
+      "publication": "Nuclear medicine and biology 50, 11-16, 2017",
+      "cited_by": {
+        "value": 45,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10235865169853147617",
+        "serpapi_link": "https://serpapi.com/search.json?cites=10235865169853147617&engine=google_scholar&hl=en",
+        "cites_id": "10235865169853147617"
+      },
+      "year": "2017"
+    },
+    {
+      "title": "Imaging of HER2 with [89Zr]pertuzumab in Response to T-DM1 Therapy",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:2osOgNQ5qMEC",
+      "citation_id": "yccp85oAAAAJ:2osOgNQ5qMEC",
+      "authors": "AVF Massicano, S Lee, BK Crenshaw, TA Aweda, R El Sayed, I Super, ...",
+      "publication": "Cancer Biotherapy & Radiopharmaceuticals 34 (4), 209-217, 2019",
+      "cited_by": {
+        "value": 23,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9246948249513849105",
+        "serpapi_link": "https://serpapi.com/search.json?cites=9246948249513849105&engine=google_scholar&hl=en",
+        "cites_id": "9246948249513849105"
+      },
+      "year": "2019"
+    },
+    {
+      "title": "New 55Co-labeled Albumin-Binding Folate Derivatives as Potential PET Agents for Folate Receptor Imaging",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:IjCSPb-OGe4C",
+      "citation_id": "yccp85oAAAAJ:IjCSPb-OGe4C",
+      "authors": "LL Radford, S Fernandez, R Beacham, R El Sayed, R Farkas, ...",
+      "publication": "Pharmaceuticals 12 (4), 166, 2019",
+      "cited_by": {
+        "value": 17,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11848929925465672104",
+        "serpapi_link": "https://serpapi.com/search.json?cites=11848929925465672104&engine=google_scholar&hl=en",
+        "cites_id": "11848929925465672104"
+      },
+      "year": "2019"
+    },
+    {
+      "title": "Manganese-52 production cross-section measurements via irradiation of natural chromium targets up to 20 MeV",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:qjMakFHDy7sC",
+      "citation_id": "yccp85oAAAAJ:qjMakFHDy7sC",
+      "authors": "R El Sayed, AVF Massicano, SL Queern, CS Loveless, SE Lapi",
+      "publication": "Applied Radiation and Isotopes 147, 165-170, 2019",
+      "cited_by": {
+        "value": 14,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7672332552865051288",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7672332552865051288&engine=google_scholar&hl=en",
+        "cites_id": "7672332552865051288"
+      },
+      "year": "2019"
+    },
+    {
+      "title": "Carotid webs produce greater hemodynamic disturbances than atherosclerotic disease: a DSA time–density curve study",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:Y0pCki6q_DkC",
+      "citation_id": "yccp85oAAAAJ:Y0pCki6q_DkC",
+      "authors": "CC Park, R El Sayed, BB Risk, DC Haussen, RG Nogueira, JN Oshinski, ...",
+      "publication": "Journal of NeuroInterventional Surgery 14 (7), 729-733, 2022",
+      "cited_by": {
+        "value": 4,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6918133646420382783",
+        "serpapi_link": "https://serpapi.com/search.json?cites=6918133646420382783&engine=google_scholar&hl=en",
+        "cites_id": "6918133646420382783"
+      },
+      "year": "2022"
+    },
+    {
+      "title": "Effect of Patient-Specific Coronary Flow Reserve Values on the Accuracy of MRI-Based Virtual Fractional Flow Reserve",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:Tyk-4Ss8FVUC",
+      "citation_id": "yccp85oAAAAJ:Tyk-4Ss8FVUC",
+      "authors": "J Hair, L Timmins, R El Sayed, H Samady, J Oshinski",
+      "publication": "Frontiers in Cardiovascular Medicine 8, 663767, 2021",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=913817939434056760",
+        "serpapi_link": "https://serpapi.com/search.json?cites=913817939434056760&engine=google_scholar&hl=en",
+        "cites_id": "913817939434056760"
+      },
+      "year": "2021"
+    },
+    {
+      "title": "Imaging HER2 in response to T-DM1 therapy in Breast Cancer Xenografts",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:d1gkVwhDpl0C",
+      "citation_id": "yccp85oAAAAJ:d1gkVwhDpl0C",
+      "authors": "A Massicano, T Aweda, R El Sayed, R Beacham, S Lapi",
+      "publication": "Journal of Nuclear Medicine 58 (supplement 1), 932-932, 2017",
+      "cited_by": {
+        "value": 3,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17269147172778752238",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17269147172778752238&engine=google_scholar&hl=en",
+        "cites_id": "17269147172778752238"
+      },
+      "year": "2017"
+    },
+    {
+      "title": "A New Method for Quantifying Abdominal Aortic Wall Shear Stress Using Phase Contrast Magnetic Resonance Imaging and the Womersley Solution",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:W7OEmFMy1HYC",
+      "citation_id": "yccp85oAAAAJ:W7OEmFMy1HYC",
+      "authors": "E Iffrig, LH Timmins, R El Sayed, WR Taylor, JN Oshinski",
+      "publication": "Journal of Biomechanical Engineering 144 (9), 091011, 2022",
+      "cited_by": {
+        "value": 2,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17749372682783487449",
+        "serpapi_link": "https://serpapi.com/search.json?cites=17749372682783487449&engine=google_scholar&hl=en",
+        "cites_id": "17749372682783487449"
+      },
+      "year": "2022"
+    },
+    {
+      "title": "Antibody-based PET agents targeting the prostate cancer-associated amino acid transporter LAT1",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:UeHWp8X0CEIC",
+      "citation_id": "yccp85oAAAAJ:UeHWp8X0CEIC",
+      "authors": "T Aweda, R El-Sayed, D Gadhia, N Yasui, A Massicano, I Super, B Wright, ...",
+      "publication": "Journal of Nuclear Medicine 60 (supplement 1), 612-612, 2019",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2019"
+    },
+    {
+      "title": "Manganese-52 production: Cross-section measurements via irradiation of natural chromium targets",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:9yKSN-GCB0IC",
+      "citation_id": "yccp85oAAAAJ:9yKSN-GCB0IC",
+      "authors": "R El Sayed, A Massicano, S Lapi",
+      "publication": "Abstracts of Papers of the American Chemical Society 255, 2018",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2018"
+    },
+    {
+      "title": "Synthesis of a Co-55-labeled albumin-binding NODAGA-folate: A potential PET agent for folate receptor imaging",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:zYLM7Y9cAGgC",
+      "citation_id": "yccp85oAAAAJ:zYLM7Y9cAGgC",
+      "authors": "LL Radford, S Ferran, R El Sayed, R Farkas, C Mueller, SE Lapi",
+      "publication": "JOURNAL OF LABELLED COMPOUNDS & RADIOPHARMACEUTICALS 60, S499-S499, 2017",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": "2017"
+    },
+    {
+      "title": "Shear-rate values in the carotid bifurcation in subjects with carotid webs, subjects with atherosclerotic lesions, and healthy subjects.",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:WF5omc3nYNoC",
+      "citation_id": "yccp85oAAAAJ:WF5omc3nYNoC",
+      "authors": "R El Sayed, A Sharifi, C Park, D Haussen, J Allen, JN Oshinski",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": ""
+    },
+    {
+      "title": "Vol. 50 CONTENTS July 2017",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yccp85oAAAAJ&citation_for_view=yccp85oAAAAJ:u-x6o8ySG0sC",
+      "citation_id": "yccp85oAAAAJ:u-x6o8ySG0sC",
+      "authors": "C Vraka, L Nics, KH Wagner, M Hacker, W Wadsak, M Mitterhauser, ...",
+      "cited_by": {
+        "value": null,
+        "link": "https://scholar.google.com"
+      },
+      "year": ""
+    }
+  ],
+  "cited_by": {
+    "table": [
+      {
+        "citations": {
+          "all": 111,
+          "since_2018": 111
+        }
+      },
+      {
+        "h_index": {
+          "all": 4,
+          "since_2018": 4
+        }
+      },
+      {
+        "i10_index": {
+          "all": 4,
+          "since_2018": 4
+        }
+      }
+    ],
+    "graph": [
+      {
+        "year": 2018,
+        "citations": 10
+      },
+      {
+        "year": 2019,
+        "citations": 14
+      },
+      {
+        "year": 2020,
+        "citations": 21
+      },
+      {
+        "year": 2021,
+        "citations": 25
+      },
+      {
+        "year": 2022,
+        "citations": 29
+      },
+      {
+        "year": 2023,
+        "citations": 12
+      }
+    ]
+  },
+  "public_access": {
+    "link": "https://scholar.google.com/citations?view_op=list_mandates&hl=en&user=yccp85oAAAAJ",
+    "available": 4,
+    "not_available": 0
+  }
+}

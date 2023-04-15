@@ -3,6 +3,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
+
 @Component({
   selector: 'app-google-scholar',
   templateUrl: './google-scholar.component.html',
@@ -16,12 +17,13 @@ export class GoogleScholarComponent {
 
   constructor(private sanitizer: DomSanitizer, private httpClient: HttpClient) {
     this.SafeArticlesFrame= this.sanitizer.bypassSecurityTrustResourceUrl(
-      'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=' + encodeURIComponent('retta el sayed') + '&btnG=');
+      //'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=' + encodeURIComponent('retta el sayed') + '&btnG='
+      'https://serpapi.com/search.html?engine=google_scholar_author&author_id=yccp85oAAAAJ&hl=en&api_key=500b8aae7039034b19cd1f07a7c56bdd32fff7ac2fcdbb7d03deff7c6117c414'
+      );
       this.searchScholar('retta el sayed')
-    // Add the iframe src URL to the src whitelist
-    // this.sanitizer.bypassSecurityTrustResourceUrl('https://scholar.google.com/citations?user=yccp85oAAAAJ&hl=en');
-
-    // Example: encode search query string
+      // Add the iframe src URL to the src whitelist
+      // this.sanitizer.bypassSecurityTrustResourceUrl('https://scholar.google.com/citations?user=yccp85oAAAAJ&hl=en');
+      // Example: encode search query string
   }
 
   searchScholar(name: string) {
