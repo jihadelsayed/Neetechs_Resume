@@ -13,19 +13,16 @@ import { GoogleScholarService } from './google-scholar.service';
 export class GoogleScholarComponent {
 
   @Input() resume: any;
-  SafeArticlesFrame: SafeResourceUrl;
+  // SafeArticlesFrame: SafeResourceUrl;
   articles: any
 
   constructor(private sanitizer: DomSanitizer, private httpClient: HttpClient,
     public googleScholarService: GoogleScholarService,
     ) {
-    this.SafeArticlesFrame= this.sanitizer.bypassSecurityTrustResourceUrl(
-      //'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=' + encodeURIComponent('retta el sayed') + '&btnG='
-      'https://serpapi.com/search.html?engine=google_scholar_author&author_id=yccp85oAAAAJ&hl=en&api_key=500b8aae7039034b19cd1f07a7c56bdd32fff7ac2fcdbb7d03deff7c6117c414'
-      );
-      // Add the iframe src URL to the src whitelist
-      // this.sanitizer.bypassSecurityTrustResourceUrl('https://scholar.google.com/citations?user=yccp85oAAAAJ&hl=en');
-      // Example: encode search query string
+    // this.SafeArticlesFrame= this.sanitizer.bypassSecurityTrustResourceUrl(
+    //   //'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=' + encodeURIComponent('retta el sayed') + '&btnG='
+    //   'https://serpapi.com/search.html?engine=google_scholar_author&author_id=yccp85oAAAAJ&hl=en&api_key=500b8aae7039034b19cd1f07a7c56bdd32fff7ac2fcdbb7d03deff7c6117c414'
+    //   );
   }
   ngOnInit(): void {
     this.googleScholarService.getArticles().subscribe(

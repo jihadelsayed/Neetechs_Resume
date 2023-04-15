@@ -22,7 +22,6 @@ export class GoogleScholarService {
 
   getArticles() {
     const domain = this.checkName(window.location.hostname)
-
     return this.httpClient.get('https://raw.githubusercontent.com/davidpales1/Neetechs_Resume/main/json/'+domain+'/'+'google_scholar_author.json');
   }
 
