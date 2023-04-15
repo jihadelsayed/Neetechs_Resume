@@ -9,7 +9,7 @@
 <div *ngIf="resume && resume.works">
   <app-works [resume]="resume"></app-works>
 </div>
-<div *ngIf="resume && resume">
+<div *ngIf="resume && resume.googleScholar">
   <app-google-scholar [resume]="resume"></app-google-scholar>
 </div>
 <div *ngIf="resume && resume.contact">
