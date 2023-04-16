@@ -17,10 +17,10 @@
     "image": "/assets/images/profilepic.jpg",
     "street": "1364 E Clifton Rd NE",
     "country": " Atlanta, GA, USA 30322",
-    "number": "(123)456-7890",
+    "number": "(205)240-9144",
     "email": "rettasayed@yahoo.com",
-    "resumeDownloadLink": "quran",
-    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. "
+    "resumeDownloadLink": "",
+    "description": ". "
   },
   "resume": {
     "education": [
@@ -46,18 +46,24 @@
     "works": [
       {
         "location": "Wallace H. Coulter - Department of Biomedical Engineering",
-        "position": "Graduate Research Assistant | Mentor: John N. Oshinski, PhD & Jason W. Allen, MD, PhD",
-        "date": "08/2019 – Current",
-        "description": " Quantify carotid artery hemodynamics using 4D flow MRI in patients with Carotid web (CaW)"
+        "position": "Graduate Research Assistant /| Mentor: John N. Oshinski, PhD & Jason W. Allen, MD, PhD",
+        "date": "August 2019 – Current",
+        "Project Title": " Quantify Carotid Artery Hemodynamics Parameters Using 4D Flow MRI in Patients with Carotid Webs"
       },
       {
-        "location": "Super Cool Studio",
-        "position": "UX Designer",
-        "date": "March 2007 - February 2010",
-        "description": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium. "
+        "location": "Siemens Medical Solutions USA, Inc. - Cardiovascular Physiology and Flow Team",
+        "position": "Research Intern \| Mentor: Tiziano Passerini",
+        "date": "May 2022 - June 2023",
+        "Project Title": "Large Dataset Generation of Synthetic Carotid Geometries for Stroke Risk Assessment"
+      },
+      {
+        "location": "Wallace Tumor Institute – UAB University Hospital",
+        "position": "Undergraduate Research Assistant | Mentor: Suzanne E. Lapi, PhD.",
+        "date": "March 2016 – May 2019",
+        "Project Title": "Manganese-52 Isotope Production from Cyclotron Solid Targets"
       }
     ],
-    "skillsDescription": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium. ",
+    "skillsDescription": " ",
     "skills": [
       {
         "skill": "photoshop",
@@ -95,7 +101,7 @@
   "contact": {
     "name": "Introduction",
     "skill": "quran",
-    "description": "I'm a Manila based graphic designer, illustrator and webdesigner creating awesome and effective visual identities for companies of all sizes around the globe. Let's start scrolling and learn more about me."
+    "description": "."
   },
   "footer": {
     "copyright": "Copyright 2022 Retta"
