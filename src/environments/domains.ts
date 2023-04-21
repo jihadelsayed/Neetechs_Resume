@@ -5,11 +5,11 @@ export interface Domain {
 
 export const domains: Domain[] = [
   {
-    name: "jihad",
+    name: "retta-elsayed",
     hostname: "localhost"
   },
   {
-    name: "jihad",
+    name: "retta-elsayed",
     hostname: "localhost:4200"
   },
   {
