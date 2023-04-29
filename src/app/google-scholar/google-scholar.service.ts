@@ -22,7 +22,7 @@ export class GoogleScholarService {
 
   getArticles() {
     const domain = this.checkName(window.location.hostname)
-    return this.httpClient.get('https://raw.githubusercontent.com/davidpales1/Neetechs_Resume/main/json/'+domain+'/'+'google_scholar_author.json');
+    return this.httpClient.get('https://raw.githubusercontent.com/jihadelsayed/Neetechs_Resume/main/json/'+domain+'/'+'google_scholar_author.json');
   }
 
 }
