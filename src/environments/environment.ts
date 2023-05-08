@@ -11,5 +11,8 @@ export const environment = {
   FrontEnd_URL: "https://theislamicnation.com",
   //LoginURL: "http://localhost:22958/",
   LoginURL: "https://accounts.theislamicnation.com/",
+  MY_ACCOUNT_URL: "https://myaccount.neetechs.com/",
+  JSON_URL: 'https://raw.githubusercontent.com/jihadelsayed/neetechs/main/json/',
+
 };
 
