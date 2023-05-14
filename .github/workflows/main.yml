@@ -11,13 +11,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout repository
+
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
         node-version: '18.x'
-    - run: npm install
-    #- run: npm run build:prod
-    - run: npm run build:prod
+    - name: Set up SSH and Initialize and Update Submodule
+      run: |
+        mkdir -p ~/.ssh/
+        echo '${{ secrets.SSH_PRIVATE_KEY }}' > ~/.ssh/id_rsa
+
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git submodule init
+        git submodule update
+
+    - name: Install Packages
+      run: npm install --force
+
+    - name: Build
+      run: npm run build
     - uses: w9jds/firebase-action@master
       with:
         args: deploy --only hosting
