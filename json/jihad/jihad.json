@@ -1,93 +1,324 @@
 {
-  "code": 200,
+      "code": 200,
   "status": "OK",
-  "home": {
-    "name": "I'm Jihad El Sayed.",
-    "facebook": "https://www.facebook.com/jihad.el.sayed1996",
-    "twitter": "https://twitter.com/JihadGhost12",
-    "googlePlus": "#",
-    "linkedin": "https://www.linkedin.com/in/gehad-al-sayed-918ab0151/",
-    "instagram": "https://www.instagram.com/gehad4093/",
-    "website": "https://neetechs.com/ar/#/",
-    "skype": "david.pales1_3",
-    "description": "Seeking to utilize my technical and professional expertise to grow in the networking and programming industry."
+  "hero": {
+    "subtitle": "🚀 SUMMARY",
+    "title": "FULL-STACK DEVELOPER & IoT BUILDER",
+    "description": "Full-stack developer and IoT builder with a CS degree in progress. Proven record delivering SaaS platforms, AI developer tools, and smart device integrations. Fluent in English, Arabic, and Swedish. Certified in security and networking. Not just technical—battle-tested.",
+    "ctaText": "View My Skills",
+    "ctaLink": "#skills"
   },
   "about": {
-    "name": "Jihad El Sayed",
-    "image": "https://pbs.twimg.com/profile_images/1233970313291075585/PgNa_1HI_400x400.jpg",
-    "street": "1600 Amphitheatre Parkway",
-    "country": " Mountain View, CA 94043 US ",
-    "number": "(123)456-7890",
-    "email": "anyone@website.com",
-    "resumeDownloadLink": "quran",
-    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. "
-  },
-  "resume": {
-    "education": [
-      {
-        "location": "University of Life",
-        "degree": "Master in Graphic Design",
-        "date": "April 2007",
-        "description": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium. "
-      },
-      {
-        "location": "School of Cool Designers",
-        "degree": "B.A. Degree in Graphic Design",
-        "date": "March 2003",
-        "description": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium. "
-      }
+    "subtitle": "Who I Am",
+    "title": "About Me",
+    "subtext": "Computer Science @ UAB • Neetechs",
+    "description": "I build practical software—Angular + Django, AI tools, and IoT. Strong bias to ship working systems and trash over‑engineered nonsense.",
+    "features": [
+      "SOCIAL MARKETING",
+      "SEO CONSULTANCY",
+      "MARKET ANALYSIS",
+      "PAGE RANKING"
     ],
-    "works": [
+    "resume": "assets/resume.pdf",
+    "tryHackMe": {
+      "title": "TryHackMe Badge",
+      "text": "Cybersecurity training progress",
+      "iframeSrc": "https://tryhackme.com/api/badges/your-badge-id"
+    },
+    "extraHexStats": [
       {
-        "location": "Awesome Design Studio",
-        "position": "Senior UX Designer",
-        "date": "March 2010 - Present",
-        "description": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium. "
+        "value": "4K",
+        "label": "CASE SUCCESS",
+        "delay": 100
       },
       {
-        "location": "Super Cool Studio",
-        "position": "UX Designer",
-        "date": "March 2007 - February 2010",
-        "description": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium. "
-      }
-    ],
-    "skillsDescription": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium. ",
-    "skills": [
-      {
-        "skill": "photoshop",
-        "percentage": 90
+        "value": "3K",
+        "label": "HAPPY CLIENT",
+        "delay": 200,
+        "offset": true
       },
       {
-        "skill": "Illustrator",
-        "percentage": 50
-      },
-      {
-        "skill": "Wordpress",
-        "percentage": 90
-      },
-      {
-        "skill": "CSS",
-        "percentage": 50
-      },
-      {
-        "skill": "HTML5",
-        "percentage": 50
-      },
-      {
-        "skill": "jQuery",
-        "percentage": 30
+        "value": "1K",
+        "label": "WINNING AWARD",
+        "delay": 300
       }
     ]
   },
+  "awards": [
+    {
+      "icon": "🎓",
+      "title": "Honors Convocation Award",
+      "meta": "Jefferson State Community College – April 2024",
+      "description": "Awarded for outstanding academic performance in Computer Science.",
+      "link": "https://www.jeffersonstate.edu/honors-convocation-2024/"
+    }
+  ],
+  "certificates": [
+    {
+      "icon": "🔐",
+      "title": "CompTIA Security+",
+      "meta": "Issued 2023",
+      "description": "Validates baseline security skills for core security functions.",
+      "link": ""
+    },
+    {
+      "icon": "🌐",
+      "title": "CCNA",
+      "meta": "Issued 2022",
+      "description": "Cisco Certified Network Associate—routing, switching, and networking fundamentals.",
+      "link": ""
+    },
+    {
+      "icon": "☁️",
+      "title": "Azure Fundamentals (AZ‑900)",
+      "meta": "Issued 2022",
+      "description": "Cloud concepts, Azure services, pricing, and support.",
+      "link": ""
+    }
+  ],
+  "badges": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "logo": "assets/badges/aws.png",
+      "certificate": "assets/certificates/aws.pdf"
+    },
+    {
+      "name": "CCNA",
+      "logo": "assets/badges/ccna.png",
+      "certificate": "assets/certificates/ccna.pdf"
+    }
+  ],
+  "blog": [
+    {
+      "date": "2025-09-01",
+      "title": "Building an Angular SSR Portfolio",
+      "summary": "How I structured my portfolio with Angular 20 + SSR and JSON-driven sections.",
+      "link": "https://neetechs.com/blog/angular-ssr-portfolio"
+    }
+  ],
+  "projects": [
+    {
+      "image": "assets/portfolio/neetechs-dashboard.png",
+      "title": "Neetechs Platform",
+      "description": "Angular 20 + SSR multi-language platform with AI tools and tutorials.",
+      "link": "https://neetechs.com"
+    },
+    {
+      "image": "assets/portfolio/bollibot-x.png",
+      "title": "BolliBot‑X",
+      "description": "SOL/USDT trading bot with real exchange data and Discord alerts.",
+      "link": "https://github.com/jihadelsayed/neetechs-bollibot-x"
+    }
+  ],
   "contact": {
-    "name": "Introduction",
-    "skill": "quran",
-    "description": "I'm a Manila based graphic designer, illustrator and webdesigner creating awesome and effective visual identities for companies of all sizes around the globe. Let's start scrolling and learn more about me."
-  },
-  "googleScholar": {
-    
+    "form": {
+      "fields": [
+        "fullName",
+        "phone",
+        "email",
+        "service",
+        "message"
+      ]
+    },
+    "methods": [
+      {
+        "type": "phone",
+        "label": "CALL",
+        "value": "(561) 316-8560"
+      },
+      {
+        "type": "email",
+        "label": "Email",
+        "value": "jelsayed@uab.edu"
+      },
+      {
+        "type": "website",
+        "label": "Website",
+        "value": "https://neetechs.com"
+      },
+      {
+        "type": "github",
+        "label": "GitHub",
+        "value": "https://github.com/jihadelsayed"
+      },
+      {
+        "type": "location",
+        "label": "Location",
+        "value": "Birmingham, AL"
+      }
+    ]
   },
   "footer": {
-    "copyright": "Copyright 2022 Retta"
-  }
+    "quickLinks": [
+      {
+        "label": "Home",
+        "href": "#home"
+      },
+      {
+        "label": "Skills",
+        "href": "#skills"
+      },
+      {
+        "label": "Pricing",
+        "href": "#pricing"
+      },
+      {
+        "label": "Testimonials",
+        "href": "#feedback"
+      }
+    ],
+    "socials": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/jihadelsayed"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/company/neetechs"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com/neetechs"
+      },
+      {
+        "label": "X/Twitter",
+        "href": "https://x.com/neetechs"
+      },
+      {
+        "label": "YouTube",
+        "href": "https://youtube.com/@neetechs"
+      }
+    ],
+    "copyright": "© 2025 Neetechs. Built by Sayed Jihad Al Sayed."
+  },
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        "Angular 20 (SSR)",
+        "React",
+        "TypeScript",
+        "SCSS"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        "Django",
+        "Node.js (Express)",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": [
+        "AWS (S3/Lambda/EB)",
+        "Azure",
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "category": "Security & Networking",
+      "items": [
+        "Security+",
+        "CCNA",
+        "IAM",
+        "VPC Networking"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "avatar": "assets/avatars/client1.png",
+      "name": "Lina M.",
+      "feedback": "Clean architecture, fast delivery, and no BS. He ships."
+    },
+    {
+      "avatar": "assets/avatars/client2.png",
+      "name": "Dr. A. Khan",
+      "feedback": "Transformed our prototype into a reliable product with SSR and secure auth."
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Full‑Stack Developer",
+      "company": "Neetechs",
+      "period": "2024 — Present",
+      "details": [
+        "Angular 20 + SSR multi‑language platform with JSON‑driven content.",
+        "Django Channels for chat; Stripe for payments; S3 for static/media."
+      ]
+    },
+    {
+      "role": "IoT Developer",
+      "company": "OurLiving (Malmö)",
+      "period": "2022",
+      "details": [
+        "Zigbee2MQTT on Raspberry Pi; AWS IoT Core integration; React dashboard.",
+        "Remote device control and monitoring for apartment care."
+      ]
+    }
+  ],
+  "pricing": [
+    {
+      "name": "Starter",
+      "price": "$499",
+      "features": [
+        "Static site (3 pages)",
+        "Basic SEO",
+        "Deployed to cloud"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$1,999",
+      "features": [
+        "SSR Angular/Django",
+        "Auth + Payments",
+        "CI/CD & Monitoring"
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "features": [
+        "Multi‑tenant SaaS",
+        "SLA & Support",
+        "Security Review"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "icon": "🧠",
+      "title": "Efficient JSON‑Driven SSR for Angular",
+      "meta": "Tech Note — 2025",
+      "description": "Pattern for loading CMS‑like content from a single JSON source in Angular 20 SSR.",
+      "link": ""
+    }
+  ],
+  "services": [
+    {
+      "icon": "⚙️",
+      "title": "Backend APIs",
+      "description": "Django/Node microservices, auth, payments, websockets."
+    },
+    {
+      "icon": "🎨",
+      "title": "Frontend SPA/SSR",
+      "description": "Angular 20 SSR, accessibility, performance."
+    },
+    {
+      "icon": "☁️",
+      "title": "Cloud & DevOps",
+      "description": "AWS/Azure infra, CI/CD, observability, cost tuning."
+    },
+    {
+      "icon": "🔐",
+      "title": "Security & Hardening",
+      "description": "Secrets, IAM, rate‑limits, audits, OWASP."
+    }
+  ]
 }
