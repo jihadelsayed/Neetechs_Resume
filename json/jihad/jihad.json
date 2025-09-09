@@ -76,18 +76,68 @@
       "link": ""
     }
   ],
-  "badges": [
-    {
-      "name": "AWS Certified Cloud Practitioner",
-      "logo": "assets/badges/aws.png",
-      "certificate": "assets/certificates/aws.pdf"
-    },
-    {
-      "name": "CCNA",
-      "logo": "assets/badges/ccna.png",
-      "certificate": "assets/certificates/ccna.pdf"
-    }
-  ],
+"badges": [
+  {
+    "name": "Burp'ed",
+    "description": "Completed the Burp Suite module",
+    "logo": "assets/badges/burpsuite.svg",
+    "certificate": "assets/badges/burped.png"
+  },
+  {
+    "name": "Blue",
+    "description": "Hacked into Windows via EternalBlue",
+    "logo": "assets/badges/blue.svg",
+    "certificate": "assets/badges/eternalblue.png"
+  },
+  {
+    "name": "OWASP Top 10",
+    "description": "Understood every OWASP vulnerability",
+    "logo": "assets/badges/owasptop10.svg",
+    "certificate": "assets/badges/owasp_top_10.png"
+  },
+  {
+    "name": "Wireshark",
+    "description": "Competent in Wireshark & Packet Analysis",
+    "logo": "assets/badges/wireshark.svg",
+    "certificate": "assets/badges/wireshark.png"
+  },
+  {
+    "name": "Webbed",
+    "description": "Understands how the world wide web works",
+    "logo": "assets/badges/webbed.svg",
+    "certificate": "assets/badges/webbed.png"
+  },
+  {
+    "name": "Pentesting Principles",
+    "description": "Completed the Introduction to Pentesting module",
+    "logo": "assets/badges/introtooffensivesecurity.svg",
+    "certificate": "assets/badges/pentesting_principle.png"
+  },
+  {
+    "name": "Networking Nerd",
+    "description": "Completed the Network Fundamentals module",
+    "logo": "assets/badges/networkfundamentals.svg",
+    "certificate": "assets/badges/networking_nerd.png"
+  },
+  {
+    "name": "Metasploitable",
+    "description": "Knows how to use Metasploit effectively",
+    "logo": "assets/badges/metasploit.svg",
+    "certificate": "assets/badges/metasploitable.png"
+  },
+  {
+    "name": "Linux Competency",
+    "description": "Being competent in Linux systems",
+    "logo": "assets/badges/linux.svg",
+    "certificate": "assets/badges/terminal.png"
+  },
+  {
+    "name": "World Wide Web",
+    "description": "Completed the How The Web Works module",
+    "logo": "assets/badges/howthewebworks.svg",
+    "certificate": "assets/badges/world_wide_web.png"
+  }
+],
   "blog": [
     {
       "date": "2025-09-01",
