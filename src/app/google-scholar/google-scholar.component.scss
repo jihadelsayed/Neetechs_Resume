@@ -1,4 +1,1 @@
-#google-scholar {
-}
-h1{
-}
+.profile-section { scroll-margin-top: calc(var(--nt-header-height) + var(--nt-space-4)); padding-inline: var(--nt-space-4); }.profile-section--muted { background: var(--nt-bg-muted); }.profile-section__container { width: min(100%, 70rem); margin-inline: auto; padding-block: var(--nt-space-10); }.profile-section__eyebrow { margin: 0 0 var(--nt-space-2); color: var(--nt-accent-text); font: var(--nt-text-label-sm); letter-spacing: var(--nt-letter-spacing-wide); text-transform: uppercase; } h2 { margin: 0 0 var(--nt-space-6); font: var(--nt-text-display-sm); }.publication-list { display: grid; gap: var(--nt-space-3); padding: 0; margin: 0; list-style: none; }.publication-list__title { color: var(--nt-text-primary); font: var(--nt-text-title-sm); text-decoration: none; }.publication-list__title:hover { color: var(--nt-accent-text); text-decoration: underline; }.publication-list p { margin: 0; color: var(--nt-text-secondary); }.publication-list__source { color: var(--nt-text-muted) !important; }

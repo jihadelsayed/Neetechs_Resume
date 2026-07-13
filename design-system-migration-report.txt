@@ -1,0 +1,22 @@
+Implemented the Neetechs design-system migration.
+
+- Classification: frontend-only Angular 15 SPA. No backend, SSR, server templates, auth/permissions, or API serializers exist in this repository.
+- Adopted `@neetechs/ui` v0.0.3 CSS tokens and patterns across the app shell, header, mobile navigation, cards, buttons, forms, alerts, progress bars, loading/error/empty states, modal, and responsive layout.
+- Removed legacy global CSS and jQuery plugin loading from [index.html](C:\Users\jihad\OneDrive\Dokumentuak\GitHub\Neetechs_Resume\src\index.html) and replaced it with the design-system stylesheet in [styles.scss](C:\Users\jihad\OneDrive\Dokumentuak\GitHub\Neetechs_Resume\src\styles.scss).
+- Modernized profile, about, résumé, portfolio, publications, contact, and footer surfaces under `src/app/`.
+- Added proper profile/publication loading, empty, and error states; responsive mobile navigation; accessible external links; skill progress semantics; contact validation and real `mailto:` composition.
+- Preserved the existing remote resume and Google Scholar JSON data flows. Removed unused hard-coded Scholar client configuration.
+- Updated test setup files so components/services can be instantiated safely.
+
+No design-system changes were made: the sibling repository is on older v0.0.2, while the installed v0.0.3 already provides the required generic primitives. Local Angular components remain because they own resume data orchestration and product-specific rendering.
+
+Validation:
+
+- `npm ls --depth=0` — passed
+- `npx tsc --noEmit -p tsconfig.app.json` — passed
+- `npx tsc --noEmit -p tsconfig.spec.json` — passed
+- `git diff --check` — passed
+- `npm test -- --watch=false --browsers=ChromeHeadless` — blocked by environment: Angular NGCC fails with `spawn EPERM` before test compilation.
+- `ng build --configuration production --verbose` — likewise blocked/hangs because this environment prevents NGCC’s child-process spawn. No source diagnostics were emitted.
+
+Manual verification: run the app locally, confirm responsive navigation, retry states with network disabled, validate contact required fields, and verify the profile JSON variants by hostname.

@@ -14,7 +14,6 @@ describe('ResumeComponent', () => {
 
     fixture = TestBed.createComponent(ResumeComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {

@@ -1,19 +1,21 @@
-<app-header [resume]="resume"></app-header>
-
-<div *ngIf="resume && resume.about">
-  <app-about [resume]="resume"></app-about>
-</div>
-<div *ngIf="resume && resume.resume">
-  <app-resume [resume]="resume"></app-resume>
-</div>
-<div *ngIf="resume && resume.works">
-  <app-works [resume]="resume"></app-works>
-</div>
-<div *ngIf="resume && resume.googleScholar">
-  <app-google-scholar [resume]="resume"></app-google-scholar>
-</div>
-<div *ngIf="resume && resume.contact">
-  <app-contact [resume]="resume"></app-contact>
-</div>
-<!-- <app-testimonials [resume]="resume"></app-testimonials> -->
-<app-footer [resume]="resume"></app-footer>
+<main class="resume-app" [attr.aria-busy]="isLoading">
+  <section *ngIf="isLoading" class="resume-app__state nt-loading-state nt-loading-state--spacious" aria-live="polite">
+    <span class="nt-loading-state__spinner" aria-hidden="true"></span>
+    <div class="nt-loading-state__body"><h1 class="nt-loading-state__title">Loading profile</h1><p class="nt-loading-state__description">Preparing this Neetechs resume.</p></div>
+  </section>
+  <section *ngIf="loadError" class="resume-app__state nt-error-state nt-error-state--surface" role="alert">
+    <div class="nt-error-state__body"><h1 class="nt-error-state__title">We couldn’t load this profile</h1><p class="nt-error-state__description">Check your connection and try again.</p></div>
+    <div class="nt-error-state__actions"><button class="nt-button nt-button--primary" type="button" (click)="loadResume()">Try again</button></div>
+  </section>
+  <ng-container *ngIf="resume">
+    <app-header [resume]="resume"></app-header>
+    <div class="resume-app__content">
+      <app-about *ngIf="resume.about" [resume]="resume"></app-about>
+      <app-resume *ngIf="resume.resume" [resume]="resume"></app-resume>
+      <app-works *ngIf="resume.works" [resume]="resume"></app-works>
+      <app-google-scholar *ngIf="resume.googleScholar" [resume]="resume"></app-google-scholar>
+      <app-contact *ngIf="resume.contact" [resume]="resume"></app-contact>
+    </div>
+    <app-footer [resume]="resume"></app-footer>
+  </ng-container>
+</main>

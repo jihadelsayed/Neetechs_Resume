@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@neetechs/ui/styles.css';
+
+:root { color-scheme: light dark; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nt-header-height) + var(--nt-space-4)); }
+body { min-width: 20rem; margin: 0; background: var(--nt-bg-app); color: var(--nt-text-primary); font: var(--nt-text-body-md); }
+*, *::before, *::after { box-sizing: border-box; }
+a { color: var(--nt-accent-text); }
+a:focus-visible { outline: 2px solid var(--nt-focus-ring); outline-offset: 3px; }
