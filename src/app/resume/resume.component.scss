@@ -1,3 +1,82 @@
-.profile-section { scroll-margin-top: calc(var(--nt-header-height) + var(--nt-space-4)); padding-inline: var(--nt-space-4); } .profile-section__container { width: min(100%, 70rem); margin-inline: auto; padding-block: var(--nt-space-10); } .profile-section__eyebrow { margin: 0 0 var(--nt-space-2); color: var(--nt-accent-text); font: var(--nt-text-label-sm); text-transform: uppercase; letter-spacing: var(--nt-letter-spacing-wide); } h2 { margin: 0; font: var(--nt-text-display-sm); }
-.resume-section { display: grid; grid-template-columns: minmax(12rem, .45fr) minmax(0, 1fr); gap: var(--nt-space-8); padding-block: var(--nt-space-8); border-bottom: 1px solid var(--nt-border-subtle); } .resume-section:last-child { border: 0; } .resume-section h3, .resume-section h4 { margin: 0; font: var(--nt-text-title-md); } .resume-section > div > p { color: var(--nt-text-muted); } .resume-section__timeline { display: grid; gap: var(--nt-space-3); padding: 0; margin: 0; list-style: none; } .resume-section__meta { margin: 0; color: var(--nt-text-secondary); font: var(--nt-text-label-sm); } .nt-card__body > p:last-child { margin-bottom: 0; color: var(--nt-text-secondary); line-height: 1.6; }.resume-section__skills { display: grid; gap: var(--nt-space-5); }.resume-skill > div:first-child { display: flex; justify-content: space-between; margin-bottom: var(--nt-space-2); font: var(--nt-text-label-md); }.nt-progress { background: var(--nt-bg-muted); }.nt-progress__bar { background: var(--nt-accent); }
-@media (max-width: 48rem) { .resume-section { grid-template-columns: 1fr; gap: var(--nt-space-4); } }
+:host { display: block; }
+.profile-section {
+  scroll-margin-top: calc(var(--nt-header-height) + var(--nt-space-4));
+  padding-inline: var(--nt-space-4);
+}
+.profile-section__container {
+  width: min(100%, 76rem);
+  margin-inline: auto;
+  padding-block: clamp(var(--nt-space-7), 5vw, var(--nt-space-10));
+}
+.profile-section__eyebrow {
+  margin: 0 0 var(--nt-space-2);
+  color: var(--nt-text-link);
+  font: var(--nt-text-label-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}
+h2 { margin: 0; font-size: clamp(1.65rem, 3vw, 2.4rem); line-height: 1.2; }
+.resume-section {
+  display: grid;
+  grid-template-columns: minmax(11rem, .42fr) minmax(0, 1fr);
+  gap: clamp(var(--nt-space-4), 3vw, var(--nt-space-8));
+  padding-block: var(--nt-space-6);
+  border-bottom: 1px solid var(--nt-border-subtle);
+}
+.resume-section:last-child { border-bottom: 0; }
+.resume-section h3 {
+  margin: 0 0 var(--nt-space-2);
+  font: var(--nt-text-title-md);
+}
+.resume-section h4 { margin: 0; font: var(--nt-text-title-sm); }
+.resume-section > div > p { margin: 0; color: var(--nt-text-secondary); }
+.resume-section__timeline {
+  display: grid;
+  gap: var(--nt-space-3);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.resume-section__timeline .nt-card {
+  border: 1px solid var(--nt-border-subtle);
+  border-radius: var(--nt-radius-xl);
+  background: var(--nt-bg-surface);
+  box-shadow: none;
+}
+.resume-section__timeline .nt-card__body { padding: var(--nt-space-4); }
+.resume-section__meta {
+  margin: var(--nt-space-2) 0 0;
+  color: var(--nt-text-secondary);
+  font: var(--nt-text-label-sm);
+}
+.resume-section__timeline .nt-card__body > p:last-child {
+  margin-bottom: 0;
+  color: var(--nt-text-secondary);
+  line-height: 1.6;
+}
+.resume-section__skills { display: grid; gap: var(--nt-space-4); }
+.resume-skill > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--nt-space-2);
+  margin-bottom: var(--nt-space-2);
+  color: var(--nt-text-secondary);
+  font: var(--nt-text-label-md);
+}
+.resume-skill .nt-progress {
+  height: .55rem;
+  background: var(--nt-bg-surface-muted);
+  border-radius: var(--nt-radius-full);
+  overflow: hidden;
+}
+.resume-skill .nt-progress__bar {
+  display: block;
+  height: 100%;
+  background: var(--nt-accent);
+  border-radius: inherit;
+}
+@media (max-width: 48rem) {
+  .resume-section { grid-template-columns: minmax(0, 1fr); gap: var(--nt-space-3); }
+}

@@ -4,15 +4,15 @@
     <nav class="profile-hero__nav" aria-label="Profile sections">
       <a href="#about">About</a><a *ngIf="resume?.resume" href="#resume">Experience</a><a *ngIf="resume?.works" href="#portfolio">Work</a><a *ngIf="resume?.googleScholar" href="#google-scholar">Publications</a><a *ngIf="resume?.contact" href="#contact">Contact</a>
     </nav>
-    <button class="nt-header__action profile-hero__menu" type="button" (click)="mobileNavigationOpen = true" aria-label="Open navigation" [attr.aria-expanded]="mobileNavigationOpen">?</button>
+    <button class="nt-header__action profile-hero__menu" type="button" (click)="mobileNavigationOpen = true" aria-label="Open navigation" aria-controls="profile-mobile-nav" [attr.aria-expanded]="mobileNavigationOpen">â˜°</button>
   </div>
   <div class="profile-hero__body">
     <p class="profile-hero__eyebrow">Professional profile</p>
     <h1>{{ resume?.home?.name }}</h1>
     <p class="profile-hero__description">{{ resume?.home?.description }}</p>
-    <div class="profile-hero__actions"><a class="nt-button nt-button--primary nt-button--lg" href="#about">Explore profile</a><a *ngIf="resume?.about?.resumeDownloadLink" class="nt-button nt-button--secondary nt-button--lg" [href]="resume.about.resumeDownloadLink">Download résumé</a></div>
+    <div class="profile-hero__actions"><a class="nt-button nt-button--primary nt-button--lg" href="#about">Explore profile</a><a *ngIf="resume?.about?.resumeDownloadLink" class="nt-button nt-button--secondary nt-button--lg" [href]="resume.about.resumeDownloadLink">Download rÃ©sumÃ©</a></div>
     <ul *ngIf="socialLinks.length" class="profile-hero__social" aria-label="Social links"><li *ngFor="let link of socialLinks"><a [href]="link.url" target="_blank" rel="noopener noreferrer">{{ link.label }}<span class="sr-only"> (opens in a new tab)</span></a></li></ul>
   </div>
   <div *ngIf="mobileNavigationOpen" class="nt-mobile-nav__overlay" (click)="closeNavigation()"></div>
-  <nav *ngIf="mobileNavigationOpen" class="nt-mobile-nav profile-hero__mobile-nav" aria-label="Mobile profile sections"><div class="nt-mobile-nav__header"><span class="nt-mobile-nav__title">Neetechs</span><button class="nt-mobile-nav__close" type="button" (click)="closeNavigation()" aria-label="Close navigation">×</button></div><div class="nt-mobile-nav__body"><a class="nt-mobile-nav__item" href="#about" (click)="closeNavigation()">About</a><a *ngIf="resume?.resume" class="nt-mobile-nav__item" href="#resume" (click)="closeNavigation()">Experience</a><a *ngIf="resume?.googleScholar" class="nt-mobile-nav__item" href="#google-scholar" (click)="closeNavigation()">Publications</a><a *ngIf="resume?.contact" class="nt-mobile-nav__item" href="#contact" (click)="closeNavigation()">Contact</a></div></nav>
+  <nav *ngIf="mobileNavigationOpen" id="profile-mobile-nav" class="nt-mobile-nav profile-hero__mobile-nav" aria-label="Mobile profile sections"><div class="nt-mobile-nav__header"><span class="nt-mobile-nav__title">Neetechs</span><button class="nt-mobile-nav__close" type="button" (click)="closeNavigation()" aria-label="Close navigation">Ã—</button></div><div class="nt-mobile-nav__body"><a class="nt-mobile-nav__item" href="#about" (click)="closeNavigation()">About</a><a *ngIf="resume?.resume" class="nt-mobile-nav__item" href="#resume" (click)="closeNavigation()">Experience</a><a *ngIf="resume?.works" class="nt-mobile-nav__item" href="#portfolio" (click)="closeNavigation()">Work</a><a *ngIf="resume?.googleScholar" class="nt-mobile-nav__item" href="#google-scholar" (click)="closeNavigation()">Publications</a><a *ngIf="resume?.contact" class="nt-mobile-nav__item" href="#contact" (click)="closeNavigation()">Contact</a></div></nav>
 </header>

@@ -1,8 +1,73 @@
 @import '@neetechs/ui/styles.css';
 
-:root { color-scheme: light dark; }
-html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nt-header-height) + var(--nt-space-4)); }
-body { min-width: 20rem; margin: 0; background: var(--nt-bg-app); color: var(--nt-text-primary); font: var(--nt-text-body-md); }
+/*
+ * Temporary Neetechs 0.0.4 palette bridge.
+ * The design-system repository owns semantic tokens; profile components
+ * consume those roles without duplicating their raw palette.
+ * Keep existing light/alternate-accent modes available.
+ */
+html[data-nt-theme='dark']:not([data-nt-contrast='high']) {
+  --nt-bg-app: #202d42;
+  --nt-bg-shell: #202d42;
+  --nt-bg-sidebar: #182337;
+  --nt-bg-header: rgba(24, 35, 55, 0.94);
+  --nt-bg-surface: #34445d;
+  --nt-bg-surface-muted: #293950;
+  --nt-bg-surface-raised: #445772;
+  --nt-bg-surface-hover: #40526b;
+  --nt-bg-surface-active: #4a5f7c;
+  --nt-bg-muted: #293950;
+  --nt-bg-surface-overlay: var(--nt-bg-surface-raised);
+  --nt-border-subtle: rgba(202, 217, 237, 0.20);
+  --nt-border-muted: rgba(202, 217, 237, 0.30);
+  --nt-border-strong: rgba(202, 217, 237, 0.42);
+  --nt-text-primary: #f8fafc;
+  --nt-text-secondary: #d8e3f0;
+  --nt-text-muted: #cbd9ea;
+  --nt-text-subtle: #cbd9ea;
+  --nt-icon-secondary: #d8e3f0;
+  --nt-control-bg: #293950;
+  --nt-control-border: rgba(202, 217, 237, 0.52);
+  --nt-control-border-hover: rgba(202, 217, 237, 0.68);
+  --nt-ai-fg: #ddd6fe;
+}
+html[data-nt-theme='dark'][data-nt-accent='blue']:not([data-nt-contrast='high']) {
+  --nt-accent: #528ef5;
+  --nt-accent-hover: #76abff;
+  --nt-accent-active: #3b82f6;
+  --nt-accent-muted: rgba(82, 142, 245, 0.17);
+  --nt-accent-subtle: rgba(82, 142, 245, 0.09);
+  --nt-accent-text: #dbeafe;
+  --nt-accent-contrast: #101c31;
+  --nt-action-primary-bg: var(--nt-accent);
+  --nt-action-primary-hover: var(--nt-accent-hover);
+  --nt-action-primary-pressed: var(--nt-accent-active);
+  --nt-action-primary-border: var(--nt-accent);
+  --nt-action-primary-fg: var(--nt-accent-contrast);
+  --nt-focus-ring: rgba(118, 171, 255, 0.9);
+  --nt-focus-ring-muted: rgba(118, 171, 255, 0.30);
+  --nt-text-link: #bfdbfe;
+  --nt-text-link-hover: #dbeafe;
+  --nt-selection-bg: rgba(82, 142, 245, 0.24);
+  --nt-selection-fg: #dbeafe;
+  --nt-border-interactive: var(--nt-focus-ring);
+  --nt-border-selected: rgba(118, 171, 255, 0.5);
+}
+:root { font-synthesis: none; text-rendering: optimizeLegibility; }
 *, *::before, *::after { box-sizing: border-box; }
-a { color: var(--nt-accent-text); }
-a:focus-visible { outline: 2px solid var(--nt-focus-ring); outline-offset: 3px; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nt-header-height) + var(--nt-space-4)); }
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--nt-bg-app);
+  color: var(--nt-text-primary);
+  font: var(--nt-text-body-md);
+}
+a { color: var(--nt-text-link); text-underline-offset: .2em; }
+a:hover { color: var(--nt-text-link-hover); }
+:where(a, button, input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--nt-focus-ring);
+  outline-offset: 3px;
+}
+::selection { background: var(--nt-selection-bg); color: var(--nt-selection-fg); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
